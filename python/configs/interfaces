@@ -1,0 +1,19 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth4
+iface eth4 inet static
+        address 105.145.72.38
+        netmask 255.255.255.0
+        network 105.145.72.0
+        broadcast 105.145.72.255
+        gateway 105.145.72.1
+        # dns-* options are implemented by the resolvconf package, if installed
+        dns-nameservers 105.145.4.21 105.145.4.22
+        dns-search sisa.samsung.com
+
