@@ -11,9 +11,9 @@ with open('file2.txt', 'r') as f:
 		
 		#r = re.compile(r'([A-Z])\1{2})(?P<middle>[a-z])\1{3}')
 		r = re.compile(r'(?<=[A-Z]{3})[a-z](?=[A-Z]{3})')
-		m = r.finall(line)
+		m = r.search(line)
 		if m is not None:
-			print m
+			print m.group()
 		#print m
 
 		#print match.group(3)
