@@ -1,5 +1,9 @@
  xafdasdlfj sdf sdfdf jjj kkk hhh 
  jjjajjj
  jjxjjj
+<<<<<<< HEAD
 
 address 	10.10.12.11
+=======
+ 
+>>>>>>> 574c517a882faf0ece8007a1ac94098653da5067
