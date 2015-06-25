@@ -26,6 +26,8 @@ class inventory(object):
 			else: 
 				print "Next"
 
+class 
+
 
 
 machine = inventory('haider','10.10.13.1','AFGEX')

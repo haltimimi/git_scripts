@@ -1,5 +1,7 @@
 import re
 
+
+
 result = ''
 # open file 
 with open('file2.txt', 'r') as f:
@@ -10,10 +12,12 @@ with open('file2.txt', 'r') as f:
 		#match = re.search('([A-Z]{3})([a-z])([A-Z]{3})', line)
 		
 		#r = re.compile(r'([A-Z])\1{2})(?P<middle>[a-z])\1{3}')
-		r = re.compile(r'(?<=[A-Z]{3})[a-z](?=[A-Z]{3})')
-		m = r.search(line)
+		#r = re.compile(r'(?<=[A-Z]{3})[a-z](?=[A-Z]{3})')
+		r = re.compile(r'([A-Z])\1{2}[a-z]\1+')
+		#r = re.compile('WWW.WWW')
+		m = r.findall(line)
 		if m is not None:
-			print m.group()
+			print m
 		#print m
 
 		#print match.group(3)

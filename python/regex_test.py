@@ -1,7 +1,7 @@
 # 
 import re 
 
-str1 = r"Hi there, % how are you? hope $name is %s good,  are yes aaa bbb ccc"
+str1 = r"Hi there, % how are you? hope $name is %s good,  are yes aaa bbb ccc, it's 2014 june 14 and will be 12 xxx 1003 "
 match1 = re.sub('\?','', str1)
 print match1
 
@@ -13,9 +13,18 @@ m1 = r1.search(str1)
 print m1.group()
 
 
-r2 = re.compile(r'\s{2}')
-m2 = r2.findall(str1)
-print (m2)
+regex2 = re.compile(r'\d+')
+match_list = regex2.findall(str1)
+print ''.join(match_list)
+print match_list
+print ' Notice that findall will retrun a list'
+print ' in order to have all results from findall'
+print ' I will need to use join()'
+print ' this list will be from the group()'
+print '=----------------------------------'
+regex3 = re.compile(r'[0-9]{2,}([^0-9]{2,})[0-9]{2,}')
+match_r3 = re.findall(regex3,str1)
+print ''.join(match_r3)
 
 print '---------'
 
