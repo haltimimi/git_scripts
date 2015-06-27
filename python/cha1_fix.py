@@ -1,7 +1,9 @@
 import string
 from string import maketrans
 
+# "string" all the alphabets in lowercase 
 intab = string.lowercase
+# "outtab", will shift the items in the string by a factor of 2 
 outtab = intab[2:] + intab[:2]
 
 trantab = maketrans(intab,outtab)
