@@ -24,7 +24,7 @@ print ' this list will be from the group()'
 print '=----------------------------------'
 regex3 = re.compile(r'[0-9]{2,}([^0-9]{2,})[0-9]{2,}')
 match_r3 = re.findall(regex3,str1)
-print ''.join(match_r3)
+print "match_r3" , ''.join(match_r3)
 
 print '---------'
 

@@ -8,7 +8,9 @@ iface lo inet loopback
 # The primary network interface
 auto eth4
 iface eth4 inet static
-        address 105.145.72.38
+        address 105.145.72.38 # address
+        #address 405.145.72.38 # address
+        address 105.14.742.38 # address
         netmask 255.255.255.0
         network 105.145.72.0
         broadcast 105.145.72.255
