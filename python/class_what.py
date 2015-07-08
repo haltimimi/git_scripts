@@ -26,7 +26,7 @@ class inventory(object):
 			else: 
 				print "Next"
 
-class 
+#class 
 
 
 
