@@ -14,6 +14,7 @@ def find_duplicates(file1):
 	# print out only the users with multiple uids
 	# set() will make sure there are no duplicates in the list.
 	for k in a:
+		print a[k]
 		if len(set(a[k])) > 1:
 			print "user (", k , ") has the following uids:", ", ".join(x for x in a[k])
 
