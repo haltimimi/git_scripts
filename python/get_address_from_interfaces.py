@@ -14,7 +14,7 @@ from os import path
 def openFile(fileName):
 	# check if file exist: 
 	if not path.isfile(fileName): 
-		print "Error: File doesn't exist"
+		print ("Error: File doesn't exist")
 		exit(1) 
 
 	lst1 = []
@@ -30,11 +30,11 @@ def openFile(fileName):
 		for ip in lst1: 
 			x = ip[:3]
 			if x == "10.":
-				print "internal IP: ", ip
+				print ("internal IP: ", ip)
 			elif x == "66." or x == "71.":
-				print "External IP: ", ip
+				print ("External IP: ", ip)
 			else: 
-				print "Other Subnet ip:", ip
+				print ("Other Subnet ip:", ip)
 
 
 

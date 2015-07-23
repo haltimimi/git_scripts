@@ -19,4 +19,14 @@ months =             ['Jan', \
                       'Nov', \
                       'Dec']
 
-print "DAYS: %s, MONTHS %s" % (daysOfWeek, months)
+# print "DAYS: %s, MONTHS %s" % (daysOfWeek, months)
+
+def ret(list):
+  if list == None:
+    return 
+  print "hi", list
+  print "next line"
+  print "retrun will stop the rest of the fucntion"
+
+ret(None)
+# ret("sam")
