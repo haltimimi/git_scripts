@@ -1,9 +1,15 @@
-from os import path 
+
 import re
+from os import path
 from collections import defaultdict, OrderedDict
 
 
 def count_top_10(file):
+	'''
+	count_top_10 will count the top 10 ip addresses
+	in a log file that shows the error code in the 
+	second argument. 
+	'''
 	if not path.isfile(file):
 		print ('Error: cannot find file', file)
 		exit(1)
@@ -11,7 +17,7 @@ def count_top_10(file):
 	d = OrderedDict()
 	with open (file, 'r') as f: 
 		for line in f: 
-			reg1 = '(^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*"\s(\d{3})\s'
+			reg1 = r'(^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*"\s(\d{3})\s'
 			match = re.search(reg1, line)
 			if match:
 				ip = match.group(1)
@@ -21,10 +27,14 @@ def count_top_10(file):
 			ip_lst.append(ip)
 			code_lst.append(code)
 			
+			# Make a dic from the regex 
+			# d2 = match.dictgroup()
+
 			for x in ip_lst: 
 				d[x] = ip_lst.count(x)
 		
 		print (sorted(d.values()))
+		print(d)
 		# for k, v in d.items():
 		# 	print (k, v) 
 		# print ("----")

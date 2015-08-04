@@ -35,5 +35,3 @@
 205.245.246.158 - - [23/Jul/2015:14:46:12 -0700] "GET /login-page.jpg HTTP/1.1" 500 189 "http://105.145.38.74/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36"
 205.245.246.158 - - [23/Jul/2015:14:46:12 -0700] "GET /login-page.jpg HTTP/1.1" 500 189 "http://105.145.38.74/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36"
 205.245.246.158 - - [23/Jul/2015:14:46:12 -0700] "GET /login-page.jpg HTTP/1.1" 500 189 "http://105.145.38.74/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36"
-
-
