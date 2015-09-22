@@ -1,4 +1,5 @@
-import re
+import re, operator
+from collections import Counter
 # from os import path 
 
 # read file 
@@ -21,9 +22,17 @@ def get_var_list(location):
 def write_data(var_list):
 	pass 
 
+ips, codes = get_var_list(0), get_var_list(8)
 
-ips = get_var_list(0)
-codes = get_var_list(8)
+def values_counts(listname):
+	c = Counter(listname)
+	return sorted(c.values())	
 
-print(set(ips))
-print(set(codes))
+count_list(ips)
+count_list(codes)
+
+# for x in ips:
+	# print(x, ips.count(x))
+# print([l,m for l,m in get_var_list(0), get_var_list(8)])
+
+
